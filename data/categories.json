@@ -1,0 +1,985 @@
+{
+  "examen-type": {
+    "id_category": 1,
+    "mot-code": {
+      "id_test": 1,
+      "type": "both",
+      "audio": "mot_code",
+      "h_consigne": "Quel est ton mot-code ?",
+      "a_consigne": "Quel est ton mot-code ?",
+      "nom": "Mot-code"
+    },
+    "ressenti": {
+      "id_test": 2,
+      "type": "both",
+      "audio": "ressenti",
+      "h_consigne": "Qu'est ce que tu ressens ?",
+      "a_consigne": "Que ressens-tu ?",
+      "nom": "Ressenti"
+    },
+    "bras-leves_verbal": {
+      "id_test": 3,
+      "type": "both",
+      "audio": "bras_leves_verbal",
+      "h_consigne": "Lève les bras devant toi",
+      "a_consigne": "Montre tes bras à la caméra",
+      "nom": "Bras levés verbal"
+    },
+    "bras-leves_modele": {
+      "id_test": 4,
+      "type": "both",
+      "audio": "bras_leves_modele",
+      "h_consigne": "Lève les bras devant toi comme moi",
+      "a_consigne": "Montre ta main gauche, puis ta main droite à la caméra",
+      "image": ["image_bras_leves"],
+      "nom": "Bras levés avec modèle"
+    },
+    "mot-memoire_repetition": {
+      "id_test": 7,
+      "type": "both",
+      "audio": "mot_memoire_repetition",
+      "h_consigne": "Répète le mot ",
+      "a_consigne": "Répète le mot ",
+      "mot_set": ["Citron", "Ballon", "Voiture", "Banane"],
+      "mot_set_audio": ["citron", "ballon", "voiture", "banane"],
+      "nom": "Répétition d'un mot-mémoire"
+    },
+    "mot-memoire_encodage": {
+      "id_test": 8,
+      "type": "both",
+      "audio": "mot_memoire_encodage",
+      "h_consigne": "Retiens ce mot, je vais te le demander plus tard : ",
+      "a_consigne": "Retiens ce mot, je vais te le demander plus tard : ",
+      "mot_set": ["Citron", "Ballon", "Voiture", "Banane"],
+      "mot_set_audio": ["citron", "ballon", "voiture", "banane"],
+      "nom": "Encodage du mot-mémoire",
+      "groupe": {
+        "id_groupe": 2,
+        "nom": "Mot-mémoire"
+      }
+    },
+    "mot-memoire_restitution": {
+      "id_test": 9,
+      "type": "both",
+      "audio": "mot_memoire_restitution",
+      "h_consigne": "C'était quoi le mot à retenir ?",
+      "a_consigne": "Quel était le mot à retenir ?",
+      "nom": "Restitution du mot-mémoire",
+      "groupe": {
+        "id_groupe": 2,
+        "nom": "Mot-mémoire"
+      }
+    },
+    "mot-memoire_pointage": {
+      "id_test": 10,
+      "type": "both",
+      "audio": "mot_memoire_pointage",
+      "affichage": "complet",
+      "h_consigne": "Montre moi le mot à retenir",
+      "a_consigne": "Quel était le mot à retenir ?",
+      "image": [
+        "image_citron",
+        "image_ballon",
+        "image_voiture",
+        "image_banane"
+      ],
+      "nom": "Pointage du mot-mémoire",
+      "groupe": {
+        "id_groupe": 2,
+        "nom": "Mot-mémoire"
+      }
+    },
+    "orientation-nom": {
+      "id_test": 11,
+      "type": "both",
+      "audio": "orientation_nom",
+      "h_consigne": "Dis moi comment tu t'appelles",
+      "a_consigne": "Comment t'appelles-tu ?",
+      "nom": "Orientation (nom)"
+    },
+    "tire-langue_no-model": {
+      "id_test": 13,
+      "type": "both",
+      "audio": "tire_langue_sans_modele",
+      "h_consigne": "Tire la langue",
+      "a_consigne": "Tire la langue devant toi",
+      "nom": "Tirer la langue (sans modèle)"
+    },
+    "tire-langue_model": {
+      "id_test": 14,
+      "type": "both",
+      "audio": "tire_langue_avec_modele",
+      "h_consigne": "Fais comme moi : tire la langue",
+      "a_consigne": "Tire la langue comme ça :",
+      "image": ["image_langue"],
+      "nom": "Tirer la langue (avec modèle)"
+    },
+    "ferme-yeux_no-model": {
+      "id_test": 15,
+      "type": "both",
+      "audio": "ferme_yeux_sans_modele",
+      "h_consigne": "Ferme les yeux fort",
+      "a_consigne": "Ferme fort puis ouvre les yeux",
+      "nom": "Fermer les yeux (sans modèle)"
+    },
+    "ferme-yeux_model": {
+      "id_test": 16,
+      "type": "both",
+      "audio": "ferme_yeux_avec_modele",
+      "h_consigne": "Ferme les yeux comme moi",
+      "a_consigne": "Ferme puis ouvre les yeux comme ça :",
+      "image": ["image_yeux"],
+      "nom": "Fermer les yeux (avec modèle)"
+    },
+    "image_denomination": {
+      "id_test": 18,
+      "type": "both",
+      "audio": "image_denomination",
+      "affichage": "hasard",
+      "h_consigne": "Dis-moi ce que c'est :",
+      "a_consigne": "Qu'est ce que c'est :",
+      "image": [
+        "image_montre",
+        "image_stylo",
+        "image_pelle",
+        "image_ciseaux",
+        "image_peigne"
+      ],
+      "nom": "Dénomination d'une image"
+    },
+    "image_comprehension": {
+      "id_test": 19,
+      "type": "both",
+      "audio": "image_comprehension",
+      "affichage": "hasard",
+      "h_consigne": "Dis-moi à quoi ça sert :",
+      "a_consigne": "À quoi ça sert :",
+      "image": [
+        "image_montre",
+        "image_stylo",
+        "image_pelle",
+        "image_ciseaux",
+        "image_peigne"
+      ],
+      "nom": "Compréhension d'une image"
+    },
+    "nom": "Examen Type"
+  },
+  "langage": {
+    "id_category": 2,
+    "mot-code": {
+      "id_test": 1,
+      "type": "both",
+      "audio": "mot_code",
+      "h_consigne": "Quel est ton mot-code ?",
+      "a_consigne": "Quel est ton mot-code ?",
+      "nom": "Mot-code"
+    },
+    "bras-leves_verbal": {
+      "id_test": 3,
+      "type": "both",
+      "audio": "bras_leves_verbal",
+      "h_consigne": "Lève les bras devant toi",
+      "a_consigne": "Montre tes bras à la caméra",
+      "nom": "Bras levés verbal"
+    },
+    "mot-memoire_repetition": {
+      "id_test": 7,
+      "type": "both",
+      "audio": "mot_memoire_repetition",
+      "h_consigne": "Répète le mot ",
+      "a_consigne": "Répète le mot ",
+      "mot_set": ["Citron", "Ballon", "Voiture", "Banane"],
+      "mot_set_audio": ["citron", "ballon", "voiture", "banane"],
+      "nom": "Répétition d'un mot-mémoire"
+    },
+    "mot-memoire_encodage": {
+      "id_test": 8,
+      "type": "both",
+      "audio": "mot_memoire_encodage",
+      "h_consigne": "Retiens ce mot, je vais te le demander plus tard : ",
+      "a_consigne": "Retiens ce mot, je vais te le demander plus tard : ",
+      "mot_set": ["Citron", "Ballon", "Voiture", "Banane"],
+      "mot_set_audio": ["citron", "ballon", "voiture", "banane"],
+      "nom": "Encodage du mot-mémoire",
+      "groupe": {
+        "id_groupe": 2,
+        "nom": "Mot-mémoire"
+      }
+    },
+    "mot-memoire_restitution": {
+      "id_test": 9,
+      "type": "both",
+      "audio": "mot_memoire_restitution",
+      "h_consigne": "C'était quoi le mot à retenir ?",
+      "a_consigne": "Quel était le mot à retenir ?",
+      "nom": "Restitution du mot-mémoire",
+      "groupe": {
+        "id_groupe": 2,
+        "nom": "Mot-mémoire"
+      }
+    },
+    "mot-memoire_pointage": {
+      "id_test": 10,
+      "type": "both",
+      "audio": "mot_memoire_pointage",
+      "affichage": "complet",
+      "h_consigne": "Montre moi le mot à retenir",
+      "a_consigne": "Quel était le mot à retenir ?",
+      "image": [
+        "image_citron",
+        "image_ballon",
+        "image_voiture",
+        "image_banane"
+      ],
+      "nom": "Pointage du mot-mémoire",
+      "groupe": {
+        "id_groupe": 2,
+        "nom": "Mot-mémoire"
+      }
+    },
+    "orientation-nom": {
+      "id_test": 11,
+      "type": "both",
+      "audio": "orientation_nom",
+      "h_consigne": "Dis moi comment tu t'appelles",
+      "a_consigne": "Comment t'appelles-tu ?",
+      "nom": "Orientation (nom)"
+    },
+    "orientation-localisation": {
+      "id_test": 12,
+      "type": "both",
+      "audio": "orientation_localisation",
+      "h_consigne": "Dis moi où l'on est",
+      "a_consigne": "Où est-tu ici ?",
+      "nom": "Orientation (localisation)"
+    },
+    "tire-langue_no-model": {
+      "id_test": 13,
+      "type": "both",
+      "audio": "tire_langue_sans_modele",
+      "h_consigne": "Tire la langue !",
+      "a_consigne": "Tire la langue devant toi",
+      "nom": "Tirer la langue (sans modèle)"
+    },
+    "ferme-yeux_no-model": {
+      "id_test": 15,
+      "type": "both",
+      "audio": "ferme_yeux_sans_modele",
+      "h_consigne": "Ferme les yeux fort",
+      "a_consigne": "Ferme fort puis ouvre les yeux",
+      "nom": "Fermer les yeux (sans modèle)"
+    },
+    "montre-nez": {
+      "id_test": 17,
+      "type": "both",
+      "audio": "montre_nez",
+      "h_consigne": "Montre-moi ton nez",
+      "a_consigne": "Montre ton nez",
+      "nom": "Montrer le nez"
+    },
+    "image_denomination": {
+      "id_test": 18,
+      "type": "both",
+      "audio": "image_denomination",
+      "affichage": "hasard",
+      "h_consigne": "Dis-moi ce que c'est :",
+      "a_consigne": "Qu'est ce que c'est :",
+      "image": [
+        "image_montre",
+        "image_stylo",
+        "image_pelle",
+        "image_ciseaux",
+        "image_peigne"
+      ],
+      "nom": "Dénomination d'une image"
+    },
+    "image_comprehension": {
+      "id_test": 19,
+      "type": "both",
+      "audio": "image_comprehension",
+      "affichage": "hasard",
+      "h_consigne": "Dis-moi à quoi ça sert :",
+      "a_consigne": "À quoi ça sert :",
+      "image": [
+        "image_montre",
+        "image_stylo",
+        "image_pelle",
+        "image_ciseaux",
+        "image_peigne"
+      ],
+      "nom": "Compréhension d'une image"
+    },
+    "objet_deno": {
+      "id_test": 20,
+      "type": "hetero",
+      "h_consigne": "Dis-moi ce que c'est : (choisir un objet)",
+      "nom": "Dénomination d'un objet"
+    },
+    "objet_comprehension": {
+      "id_test": 21,
+      "type": "hetero",
+      "h_consigne": "Dis-moi à quoi ça sert : (choisir un objet)",
+      "nom": "Compréhension d'un objet"
+    },
+    "objet_encodage": {
+      "id_test": 22,
+      "type": "hetero",
+      "h_consigne": "Retiens l'objet que je te montre (le montrer à la caméra)",
+      "nom": "Encodage d'un objet",
+      "groupe": {
+        "id_groupe": 3,
+        "nom": "Objet mémoire"
+      }
+    },
+    "objet_restitution": {
+      "id_test": 23,
+      "type": "hetero",
+      "consigne": "C'était quoi l'objet que je t'ai montré ?",
+      "nom": "Restitution d'un objet",
+      "groupe": {
+        "id_groupe": 3,
+        "nom": "Objet mémoire"
+      }
+    },
+    "langage_repet_mot_setA": {
+      "id_test": 24,
+      "type": "both",
+      "audio": "langage_repet_mot_seta",
+      "h_consigne": "Répète après moi le mot ",
+      "a_consigne": "Répète le mot ",
+      "mot_set": ["Lapin", "Renard", "Chat", "Cheval"],
+      "mot_set_audio": ["lapin", "renard", "chat", "cheval"],
+      "nom": "Répetition d'un mot (animaux)",
+      "groupe": {
+        "id_groupe": 4,
+        "nom": "Langage (animaux)"
+      }
+    },
+    "langage_lecture_mot_setA": {
+      "id_test": 25,
+      "type": "both",
+      "audio": "langage_lecture_mot_seta",
+      "h_consigne": "Lis le mot au milieu :",
+      "a_consigne": "Lis le mot au milieu :",
+      "mot_set": ["Lapin", "Renard", "Chat", "Cheval"],
+      "mot_set_audio": ["lapin", "renard", "chat", "cheval"],
+      "nom": "Lecture d'un mot (animaux)",
+      "groupe": {
+        "id_groupe": 4,
+        "nom": "Langage (animaux)"
+      }
+    },
+    "langage_pointage_mot_setA": {
+      "id_test": 26,
+      "type": "both",
+      "audio": "langage_pointage_mot_seta",
+      "affichage": "complet",
+      "h_consigne": "Appuie sur ",
+      "a_consigne": "Appuie sur ",
+      "mot_set": ["Le lapin", "Le renard", "Le chat", "Le cheval"],
+      "mot_set_audio": ["lapin", "renard", "chat", "cheval"],
+      "image": ["image_lapin", "image_renard", "image_chat", "image_cheval"],
+      "nom": "Pointage d'un mot (animaux)",
+      "groupe": {
+        "id_groupe": 4,
+        "nom": "Langage (animaux)"
+      }
+    },
+    "langage_repet_mot_setB": {
+      "id_test": 27,
+      "type": "both",
+      "audio": "langage_repet_mot_setb",
+      "h_consigne": "Répète après moi le mot ",
+      "a_consigne": "Répète le mot ",
+      "mot_set": ["Panier", "Chaussure", "Bateau", "Oignon"],
+      "mot_set_audio": ["panier", "chaussure", "bateau", "oignon"],
+      "nom": "Répetition d'un mot (objets)",
+      "groupe": {
+        "id_groupe": 5,
+        "nom": "Langage (objets)"
+      }
+    },
+    "langage_lecture_mot_setB": {
+      "id_test": 28,
+      "type": "both",
+      "audio": "langage_lecture_mot_setb",
+      "h_consigne": "Lis le mot au milieu :",
+      "a_consigne": "Lis le mot au milieu :",
+      "mot_set": ["Panier", "Chaussure", "Bateau", "Oignon"],
+      "mot_set_audio": ["panier", "chaussure", "bateau", "oignon"],
+      "nom": "Lecture d'un mot (objets)",
+      "groupe": {
+        "id_groupe": 5,
+        "nom": "Langage (objets)"
+      }
+    },
+    "langage_pointage_mot_setB": {
+      "id_test": 29,
+      "type": "both",
+      "audio": "langage_pointage_mot_setb",
+      "affichage": "complet",
+      "h_consigne": "Appuie sur ",
+      "a_consigne": "Appuie sur ",
+      "mot_set": ["Le panier", "La chaussure", "Le bateau", "L'oignon"],
+      "mot_set_audio": ["panier", "chaussure", "bateau", "oignon"],
+      "image": [
+        "image_panier",
+        "image_chaussure",
+        "image_bateau",
+        "image_oignon"
+      ],
+      "nom": "Pointage d'un mot (objets)",
+      "groupe": {
+        "id_groupe": 5,
+        "nom": "Langage (objets)"
+      }
+    },
+    "langage_repet_phrase": {
+      "id_test": 30,
+      "type": "both",
+      "audio": "langage_repet_phrase",
+      "h_consigne": "Répète après moi la phrase :",
+      "a_consigne": "Répète la phrase :",
+      "mot_set": [
+        "« Le colibri a déposé ses œufs sur le sable. »",
+        "« L’argument de l’avocat les a convaincus. »",
+        "« Pas de mais, de si, ni de et. »"
+      ],
+      "mot_set_audio": ["phrase_colibri", "phrase_avocat", "phrase_mais"],
+      "nom": "Répetition d'une phrase"
+    },
+    "langage_phonation": {
+      "id_test": 31,
+      "type": "both",
+      "audio": "langage_phonation",
+      "h_consigne": "Répète après moi les syllabes : « pataka-pétéké »",
+      "a_consigne": "Répète les syllabes : « pataka-pétéké »",
+      "nom": "Phonation"
+    },
+    "langage_audio_deno": {
+      "id_test": 32,
+      "type": "both",
+      "audio": "langage_audio_deno",
+      "h_consigne": "Comment appelle-t-on :",
+      "a_consigne": "Comment appelle-t-on :",
+      "mot_set": [
+        "La personne qui fait du pain ?",
+        "L'endroit où on va nager ?",
+        "La personne qui distribue le courrier ?"
+      ],
+      "mot_set_audio": ["boulanger", "piscine", "facteur"],
+      "nom": "Dénomination audio"
+    },
+    "stroop_dot": {
+      "id_test": 37,
+      "type": "both",
+      "audio": "stroop_dot",
+      "affichage": "hasard",
+      "h_consigne": "Dis-moi de quelle couleur est le rond",
+      "a_consigne": "De quelle couleur est le rond ?",
+      "image": [
+        "image_point_jaune",
+        "image_point_vert",
+        "image_point_bleu",
+        "image_point_rouge"
+      ],
+      "nom": "Stroop (ronds)",
+      "groupe": {
+        "id_groupe": 6,
+        "nom": "Test de Stroop"
+      }
+    },
+    "stroop_mot": {
+      "id_test": 38,
+      "type": "both",
+      "audio": "stroop_mot",
+      "h_consigne": "Dis-moi de quelle couleur est le mot :",
+      "a_consigne": "Quelle est la couleur du mot :",
+      "couleur": ["jaune", "vert", "bleu", "rouge"],
+      "mot_set": ["MAIS", "POUR", "DONC", "QUAND"],
+      "nom": "Stroop (mot)",
+      "groupe": {
+        "id_groupe": 6,
+        "nom": "Test de Stroop"
+      }
+    },
+    "stroop_interference": {
+      "id_test": 39,
+      "type": "both",
+      "audio": "stroop_interference",
+      "h_consigne": "Dis-moi de quelle couleur est le mot :",
+      "a_consigne": "Quelle est la couleur du mot :",
+      "couleur": ["Jaune", "Vert", "Bleu", "Rouge"],
+      "mot_set": ["JAUNE", "ROUGE", "BLEU", "ROUGE"],
+      "nom": "Stroop (interférence)",
+      "groupe": {
+        "id_groupe": 6,
+        "nom": "Test de Stroop"
+      }
+    },
+    "fluence_verbale": {
+      "id_test": 41,
+      "type": "both",
+      "audio": "fluence_verbale",
+      "h_consigne": "Donne-moi 5 mots qui commencent par F",
+      "a_consigne": "Donne 5 mots qui commencent par F",
+      "mot_set": ["F", "S", "C"],
+      "nom": "Fluence verbale"
+    },
+    "decompte": {
+      "id_test": 44,
+      "type": "both",
+      "audio": "decompte",
+      "h_consigne": "Compte jusqu'à 10",
+      "a_consigne": "Compte jusqu'à 10",
+      "nom": "Décompte"
+    },
+    "nom": "Langage"
+  },
+  "mémoire": {
+    "id_category": 3,
+    "mot-code": {
+      "id_test": 1,
+      "type": "both",
+      "audio": "mot_code",
+      "h_consigne": "Quel est ton mot-code ?",
+      "a_consigne": "Quel est ton mot-code ?",
+      "nom": "Mot-code"
+    },
+    "mot-memoire_encodage": {
+      "id_test": 8,
+      "type": "both",
+      "audio": "mot_memoire_encodage",
+      "h_consigne": "Retiens ce mot, je vais te le demander plus tard : ",
+      "a_consigne": "Retiens ce mot, je vais te le demander plus tard : ",
+      "mot_set": ["Citron", "Ballon", "Voiture", "Banane"],
+      "mot_set_audio": ["citron", "ballon", "voiture", "banane"],
+      "nom": "Encodage du mot-mémoire",
+      "groupe": {
+        "id_groupe": 2,
+        "nom": "Mot-mémoire"
+      }
+    },
+    "mot-memoire_restitution": {
+      "id_test": 9,
+      "type": "both",
+      "audio": "mot_memoire_restitution",
+      "h_consigne": "C'était quoi le mot à retenir ?",
+      "a_consigne": "Quel était le mot à retenir ?",
+      "nom": "Restitution du mot-mémoire",
+      "groupe": {
+        "id_groupe": 2,
+        "nom": "Mot-mémoire"
+      }
+    },
+    "mot-memoire_pointage": {
+      "id_test": 10,
+      "type": "both",
+      "audio": "mot_memoire_pointage",
+      "affichage": "complet",
+      "h_consigne": "Montre le mot à retenir",
+      "a_consigne": "Quel était le mot à retenir ?",
+      "image": [
+        "image_citron",
+        "image_ballon",
+        "image_voiture",
+        "image_banane"
+      ],
+      "nom": "Pointage du mot-mémoire",
+      "groupe": {
+        "id_groupe": 2,
+        "nom": "Mot-mémoire"
+      }
+    },
+    "objet_encodage": {
+      "id_test": 22,
+      "type": "hetero",
+      "h_consigne": "Retiens l'objet que je te montre (le montrer à la caméra)",
+      "nom": "Encodage d'un objet",
+      "groupe": {
+        "id_groupe": 3,
+        "nom": "Objet mémoire"
+      }
+    },
+    "objet_restitution": {
+      "id_test": 23,
+      "type": "hetero",
+      "consigne": "C'était quoi l'objet que je t'ai montré ?",
+      "nom": "Restitution d'un objet",
+      "groupe": {
+        "id_groupe": 3,
+        "nom": "Objet mémoire"
+      }
+    },
+    "nom": "Mémoire"
+  },
+  "sensitivo-moteur": {
+    "id_category": 4,
+    "bras-leves_verbal": {
+      "id_test": 3,
+      "type": "both",
+      "audio": "bras_leves_verbal",
+      "h_consigne": "Lève les bras devant toi",
+      "a_consigne": "Montre tes bras à la caméra",
+      "nom": "Bras levés verbal"
+    },
+    "bras-leves_modele": {
+      "id_test": 4,
+      "type": "both",
+      "audio": "bras_leves_modele",
+      "h_consigne": "Lève les bras devant toi comme moi",
+      "a_consigne": "Montre ta main gauche, puis ta main droite à la caméra",
+      "image": ["image_bras_leves"],
+      "nom": "Bras levés avec modèle"
+    },
+    "tire-langue_no-model": {
+      "id_test": 13,
+      "type": "both",
+      "audio": "tire_langue_sans_modele",
+      "h_consigne": "Tire la langue",
+      "a_consigne": "Tire la langue devant toi",
+      "nom": "Tirer la langue (sans modèle)"
+    },
+    "tire-langue_model": {
+      "id_test": 14,
+      "type": "both",
+      "audio": "tire_langue_avec_modele",
+      "h_consigne": "Fais comme moi : tire la langue",
+      "a_consigne": "Tire la langue comme ça :",
+      "image": ["image_langue"],
+      "nom": "Tirer la langue (avec modèle)"
+    },
+    "ferme-yeux_no-model": {
+      "id_test": 15,
+      "type": "both",
+      "audio": "ferme_yeux_sans_modele",
+      "h_consigne": "Ferme les yeux fort",
+      "a_consigne": "Ferme fort puis ouvre les yeux",
+      "nom": "Fermer les yeux (sans modèle)"
+    },
+    "ferme-yeux_model": {
+      "id_test": 16,
+      "type": "both",
+      "audio": "ferme_yeux_avec_modele",
+      "h_consigne": "Ferme les yeux comme moi",
+      "a_consigne": "Ferme puis ouvre les yeux comme ça :",
+      "image": ["image_yeux"],
+      "nom": "Fermer les yeux (avec modèle)"
+    },
+    "montre-nez": {
+      "id_test": 17,
+      "type": "both",
+      "audio": "montre_nez",
+      "h_consigne": "Montre-moi ton nez",
+      "a_consigne": "Montre ton nez",
+      "nom": "Montrer le nez"
+    },
+    "langage_phonation": {
+      "id_test": 31,
+      "type": "both",
+      "audio": "langage_phonation",
+      "h_consigne": "Répète après moi les syllabes : « pataka-pétéké »",
+      "a_consigne": "Répète les syllabes : « pataka-pétéké »",
+      "nom": "Phonation"
+    },
+    "oculomot_droit": {
+      "id_test": 33,
+      "type": "both",
+      "audio": "oculomot_droit",
+      "h_consigne": "Regarde vers la droite",
+      "a_consigne": "Regarde vers la droite",
+      "image": ["image_oculomot_droit"],
+      "nom": "Oculomoteur droit"
+    },
+    "oculomot_gauche": {
+      "id_test": 34,
+      "type": "both",
+      "audio": "oculomot_gauche",
+      "h_consigne": "Regarde vers la gauche",
+      "a_consigne": "Regarde vers la gauche",
+      "image": ["image_oculomot_gauche"],
+      "nom": "Oculomoteur gauche"
+    },
+    "oculomot_haut": {
+      "id_test": 35,
+      "type": "both",
+      "audio": "oculomot_haut",
+      "h_consigne": "Regarde vers le haut",
+      "a_consigne": "Regarde vers le haut",
+      "image": ["image_oculomot_haut"],
+      "nom": "Oculomoteur haut"
+    },
+    "oculomot_bas": {
+      "id_test": 36,
+      "type": "both",
+      "audio": "oculomot_bas",
+      "h_consigne": "Regarde vers le bas",
+      "a_consigne": "Regarde vers le bas",
+      "image": ["image_oculomot_bas"],
+      "nom": "Oculomoteur bas"
+    },
+    "sensibilite_msup": {
+      "id_test": 42,
+      "type": "both",
+      "audio": "sensibilite_msup",
+      "h_consigne": "Sur les bras : est-ce que tu sens pareil à droite et à gauche ?",
+      "a_consigne": "Sur les bras : est-ce que tu sens pareil à droite et à gauche ?",
+      "image": ["image_sensibilite_msup"],
+      "nom": "Sensibilité du membre supérieur"
+    },
+    "sensibilite_face": {
+      "id_test": 43,
+      "type": "both",
+      "audio": "sensibilite_face",
+      "h_consigne": "Sur le visage : est-ce que tu sens pareil à droite et à gauche ?",
+      "a_consigne": "Sur le visage : est-ce que tu sens pareil à droite et à gauche ?",
+      "image": ["image_sensibilite_face"],
+      "nom": "Sensibilité de la face"
+    },
+    "nom": "Sensitivo-Moteur"
+  },
+  "vision": {
+    "id_category": 5,
+    "mot-memoire_pointage": {
+      "id_test": 10,
+      "type": "both",
+      "audio": "mot_memoire_pointage",
+      "affichage": "complet",
+      "h_consigne": "Montre le mot à retenir",
+      "a_consigne": "Quel était le mot à retenir ?",
+      "image": [
+        "image_citron",
+        "image_ballon",
+        "image_voiture",
+        "image_banane"
+      ],
+      "nom": "Pointage du mot-mémoire",
+      "groupe": {
+        "id_groupe": 2,
+        "nom": "Mot-mémoire"
+      }
+    },
+    "image_denomination": {
+      "id_test": 18,
+      "type": "both",
+      "audio": "image_denomination",
+      "affichage": "hasard",
+      "h_consigne": "Dis-moi ce que c'est :",
+      "a_consigne": "Qu'est ce que c'est :",
+      "image": [
+        "image_montre",
+        "image_stylo",
+        "image_pelle",
+        "image_ciseaux",
+        "image_peigne"
+      ],
+      "nom": "Dénomination d'une image"
+    },
+    "image_comprehension": {
+      "id_test": 19,
+      "type": "both",
+      "audio": "image_comprehension",
+      "affichage": "hasard",
+      "h_consigne": "Dis-moi à quoi ça sert :",
+      "a_consigne": "À quoi ça sert :",
+      "image": [
+        "image_montre",
+        "image_stylo",
+        "image_pelle",
+        "image_ciseaux",
+        "image_peigne"
+      ],
+      "nom": "Compréhension d'une image"
+    },
+    "objet_deno": {
+      "id_test": 20,
+      "type": "hetero",
+      "h_consigne": "Dis-moi ce que c'est : (choisir un objet)",
+      "nom": "Dénomination d'un objet"
+    },
+    "objet_comprehension": {
+      "id_test": 21,
+      "type": "hetero",
+      "h_consigne": "Dis-moi à quoi ça sert : (choisir un objet)",
+      "nom": "Compréhension d'un objet"
+    },
+    "objet_encodage": {
+      "id_test": 22,
+      "type": "hetero",
+      "h_consigne": "Retiens l'objet que je te montre (le montrer à la caméra)",
+      "nom": "Encodage d'un objet",
+      "groupe": {
+        "id_groupe": 3,
+        "nom": "Objet mémoire"
+      }
+    },
+    "objet_restitution": {
+      "id_test": 23,
+      "type": "hetero",
+      "h_consigne": "C'était quoi l'objet que je t'ai montré ?",
+      "nom": "Restitution d'un objet",
+      "groupe": {
+        "id_groupe": 3,
+        "nom": "Objet mémoire"
+      }
+    },
+    "langage_lecture_mot_setA": {
+      "id_test": 25,
+      "type": "both",
+      "audio": "langage_lecture_mot_seta",
+      "h_consigne": "Lis le mot au milieu :",
+      "a_consigne": "Lis le mot au milieu :",
+      "mot_set": ["Lapin", "Renard", "Chat", "Cheval"],
+      "mot_set_audio": ["lapin", "renard", "chat", "cheval"],
+      "nom": "Lecture d'un mot (animaux)",
+      "groupe": {
+        "id_groupe": 4,
+        "nom": "Langage (animaux)"
+      }
+    },
+    "langage_pointage_mot_setA": {
+      "id_test": 26,
+      "type": "both",
+      "audio": "langage_pointage_mot_seta",
+      "affichage": "complet",
+      "h_consigne": "Appuie sur le ",
+      "a_consigne": "Appuie sur le ",
+      "mot_set": ["Lapin", "Renard", "Chat", "Cheval"],
+      "mot_set_audio": ["lapin", "renard", "chat", "cheval"],
+      "image": ["image_lapin", "image_renard", "image_chat", "image_cheval"],
+      "nom": "Pointage d'un mot (animaux)",
+      "groupe": {
+        "id_groupe": 4,
+        "nom": "Langage (animaux)"
+      }
+    },
+    "langage_lecture_mot_setB": {
+      "id_test": 28,
+      "type": "both",
+      "audio": "langage_lecture_mot_setb",
+      "h_consigne": "Lis le mot au milieu :",
+      "a_consigne": "Lis le mot au milieu :",
+      "mot_set": ["Panier", "Chaussure", "Bateau", "Oignon"],
+      "mot_set_audio": ["panier", "chaussure", "bateau", "oignon"],
+      "nom": "Lecture d'un mot (objets)",
+      "groupe": {
+        "id_groupe": 5,
+        "nom": "Langage (objets)"
+      }
+    },
+    "langage_pointage_mot_setB": {
+      "id_test": 29,
+      "type": "both",
+      "audio": "langage_pointage_mot_setb",
+      "affichage": "complet",
+      "h_consigne": "Appuie sur le ",
+      "a_consigne": "Appuie sur le ",
+      "mot_set": ["Panier", "Chaussure", "Bateau", "Oignon"],
+      "mot_set_audio": ["panier", "chaussure", "bateau", "oignon"],
+      "image": [
+        "image_panier",
+        "image_chaussure",
+        "image_bateau",
+        "image_oignon"
+      ],
+      "nom": "Pointage d'un mot (objets)",
+      "groupe": {
+        "id_groupe": 5,
+        "nom": "Langage (objets)"
+      }
+    },
+    "oculomot_droit": {
+      "id_test": 33,
+      "type": "both",
+      "audio": "oculomot_droit",
+      "h_consigne": "Regarde vers la droite",
+      "a_consigne": "Regarde vers la droite",
+      "image": ["image_oculomot_droit"],
+      "nom": "Oculomoteur droit"
+    },
+    "oculomot_gauche": {
+      "id_test": 34,
+      "type": "both",
+      "audio": "oculomot_gauche",
+      "h_consigne": "Regarde vers la gauche",
+      "a_consigne": "Regarde vers la gauche",
+      "image": ["image_oculomot_gauche"],
+      "nom": "Oculomoteur gauche"
+    },
+    "oculomot_haut": {
+      "id_test": 35,
+      "type": "both",
+      "audio": "oculomot_haut",
+      "h_consigne": "Regarde vers le haut",
+      "a_consigne": "Regarde vers le haut",
+      "image": ["image_oculomot_haut"],
+      "nom": "Oculomoteur haut"
+    },
+    "oculomot_bas": {
+      "id_test": 36,
+      "type": "both",
+      "audio": "oculomot_bas",
+      "h_consigne": "Regarde vers le bas",
+      "a_consigne": "Regarde vers le bas",
+      "image": ["image_oculomot_bas"],
+      "nom": "Oculomoteur bas"
+    },
+    "stroop_dot": {
+      "id_test": 37,
+      "type": "both",
+      "audio": "stroop_dot",
+      "affichage": "hasard",
+      "h_consigne": "Dis-moi de quelle couleur est le rond",
+      "a_consigne": "De quelle couleur est le rond ?",
+      "image": [
+        "image_point_jaune",
+        "image_point_vert",
+        "image_point_bleu",
+        "image_point_rouge"
+      ],
+      "nom": "Stroop (ronds)",
+      "groupe": {
+        "id_groupe": 6,
+        "nom": "Test de Stroop"
+      }
+    },
+    "stroop_mot": {
+      "id_test": 38,
+      "type": "both",
+      "audio": "stroop_mot",
+      "h_consigne": "Dis-moi de quelle couleur est le mot :",
+      "a_consigne": "Quelle est la couleur du mot :",
+      "couleur": ["jaune", "vert", "bleu", "rouge"],
+      "mot_set": ["MAIS", "POUR", "DONC", "QUAND"],
+      "nom": "Stroop (mot)",
+      "groupe": {
+        "id_groupe": 6,
+        "nom": "Test de Stroop"
+      }
+    },
+    "stroop_interference": {
+      "id_test": 39,
+      "type": "both",
+      "audio": "stroop_interference",
+      "h_consigne": "Dis-moi de quelle couleur est le mot :",
+      "a_consigne": "Quelle est la couleur du mot :",
+      "couleur": ["Jaune", "Vert", "Bleu", "Rouge"],
+      "mot_set": ["JAUNE", "ROUGE", "BLEU", "ROUGE"],
+      "nom": "Stroop (interférence)",
+      "groupe": {
+        "id_groupe": 6,
+        "nom": "Test de Stroop"
+      }
+    },
+    "champ_visuel": {
+      "id_test": 40,
+      "type": "hetero",
+      "h_consigne": "Teste la vision à gauche et à droite",
+      "image": ["image_champ_visuel"],
+      "nom": "Champ visuel"
+    },
+    "nom": "Vision"
+  }
+}
+
