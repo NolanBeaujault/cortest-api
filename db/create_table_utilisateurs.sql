@@ -1,0 +1,10 @@
+CREATE TABLE utilisateurs (
+    id VARCHAR(128) NOT NULL PRIMARY KEY,
+    nom VARCHAR(50) DEFAULT NULL,
+    prenom VARCHAR(50) DEFAULT NULL,
+    date_naissance VARCHAR(150) DEFAULT NULL,
+    adresse TEXT DEFAULT NULL,
+    neurologue VARCHAR(100) DEFAULT NULL,
+    mot_code VARCHAR(255) DEFAULT NULL
+);
+
